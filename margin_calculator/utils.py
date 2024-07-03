@@ -17,8 +17,7 @@ customer.custom_client_margin_rate:
             
             if valuation_rate:
                 # Calculate the new rate with margin
-                margin_rate = valuation_rate * (1 + 
-customer.custom_client_margin_rate / 100.0)
+                margin_rate = valuation_rate * (1 + customer.custom_client_margin_rate / 100.0)
                 item.rate = margin_rate
                 item.amount = item.qty * item.rate
 
